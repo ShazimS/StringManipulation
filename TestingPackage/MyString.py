@@ -28,13 +28,13 @@ class MyString():
         c=""
         try:
             if start<=0:
-                return("Invalid range")
+                return("Index out of bounds")
             else:
                 for b in range(start-1,end):
                     c=c+self.str[b]
                 return c
         except IndexError:
-                return("Invalid range")
+                return("Index out of bounds")
 
     #Breaks the string down, and returns it as a character string
     def getCharList(self):
@@ -50,14 +50,6 @@ class MyString():
     #Index 1 corresponds to the first character in the current string.
     # return 0 if no match is found
     def indexOf(self,c):
-        '''length=len(self.str)
-        start=length-length+1
-            for e in range(start,length):
-                if c=e:
-                    return e=-1 '''
-
-
-
 
         return 0
 
